@@ -1,0 +1,711 @@
+<!doctype html>
+<!--
+DIRECTION CONTRACT (replaces KV-world contract; KV style removed at user direction)
+THESIS: The offer as a desk instrument on a workbench. The category default (dark
+VSL lander, red urgency) and the discarded look (agency purple gradient) both
+refused. Proof is presented the way hardware presents state: legends, readouts,
+one orange commit key.
+OWN-WORLD: charcoal ground #171A1E, gunmetal panels #383D42 with hairline frames
+and corner ticks, bone/putty keycaps with real key travel (hover half-press,
+active full press), safety orange #FF6A00 reserved for the JOIN commit, amber
+#FFC24D reserved for live state (LCD, lit mode key, readouts), stair-step amber
+data traces, Martian Mono display (tight .04em; legends/kickers tracked wide) +
+Red Hat Mono body; who-for = bone commit panel vs dark skip module.
+STORY: a working practitioner's bench: the LCD routes a plain-English goal, the
+mode keys name the library's real tracks, the readouts carry dated client
+results, the one orange key joins. Skeptic checks the legends, presses EXECUTE.
+FIRST VIEWPORT: chassis bar; left kicker + display headline + mono subhead +
+orange keycap CTA + spec microline; right the instrument module (amber LCD loop,
+mode keys, EXECUTE join key); feature strip beneath. Primary action visible.
+FORM: copy-locked linear pre-sell; world = dealt challenger "creator-hardware
+bench" (seed key 833c502b), chosen by the user over the assigned terminal
+session; module-grid staging with the Library module double-wide as the one
+deliberate asymmetry.
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The AI SEO System I Run My Agency On</title>
+<meta name="description" content="I run a real SEO agency on the exact system taught inside AI Marketing Hub Pro. Watch it work on screen, see real client outcomes, and decide for yourself.">
+<meta property="og:title" content="The AI SEO System I Run My Agency On">
+<meta property="og:description" content="A working SEO agency owner walks through the system he delivers client work on, with dated, windowed results. No income claims, on purpose.">
+<meta property="og:type" content="website">
+<meta name="robots" content="index,follow">
+<!-- canonical: set to the deployed URL at deploy time -->
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23171A1E'/%3E%3Crect x='10' y='12' width='44' height='18' rx='3' fill='%231A1408' stroke='%232A2E33'/%3E%3Ctext x='32' y='26' font-family='monospace' font-size='12' fill='%23FFC24D' text-anchor='middle'%3EREADY%3C/text%3E%3Crect x='10' y='38' width='20' height='14' rx='3' fill='%23C6C2B8'/%3E%3Crect x='34' y='38' width='20' height='14' rx='3' fill='%23FF6A00'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Martian+Mono:wght@400;700;800&family=Red+Hat+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bone:#E6E2D9; --putty:#C6C2B8; --gunmetal:#383D42; --charcoal:#171A1E;
+    --orange:#FF6A00; --amber:#FFC24D; --lcd:#1A1408; --hairline:#2A2E33;
+    --dim:#ABB0A9; --module:#1E2226;
+    --display:"Martian Mono",ui-monospace,monospace;
+    --mono:"Red Hat Mono",ui-monospace,Menlo,monospace;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{font:400 15.5px/1.7 var(--mono);color:var(--putty);background:var(--charcoal);-webkit-font-smoothing:antialiased}
+  ::selection{background:var(--amber);color:var(--charcoal)}
+  h1,h2,h3{font-family:var(--display);text-transform:uppercase;color:var(--bone);font-weight:800;letter-spacing:.04em;line-height:1.28;text-wrap:balance}
+  p{max-width:68ch}
+  a{color:var(--amber)}
+  .wrap{max-width:1140px;margin:0 auto;padding:0 24px}
+  .kicker{font:700 12px/1 var(--display);letter-spacing:.22em;text-transform:uppercase;color:var(--dim)}
+  .lbl{font:500 11px/1 var(--mono);letter-spacing:.18em;text-transform:uppercase;color:var(--dim)}
+
+  /* ---------- keycaps ---------- */
+  .key{display:inline-flex;align-items:center;gap:10px;font:700 13px/1 var(--display);letter-spacing:.14em;text-transform:uppercase;
+    text-decoration:none;padding:17px 26px;border-radius:9px;cursor:pointer;user-select:none;
+    transition:transform .07s ease,box-shadow .07s ease}
+  .key:focus-visible{outline:3px solid var(--amber);outline-offset:3px}
+  .key-orange:hover{transform:translateY(1px);box-shadow:0 3px 0 #A34200,0 5px 10px rgba(0,0,0,.5)}
+  .key-bone:hover{transform:translateY(1px);box-shadow:0 3px 0 #9B968A,0 5px 10px rgba(0,0,0,.5)}
+  .key-ghost:hover{transform:translateY(1px);box-shadow:0 2px 0 rgba(0,0,0,.35);color:var(--bone)}
+  .key-orange{background:var(--orange);color:var(--charcoal);
+    box-shadow:0 4px 0 #A34200,0 7px 14px rgba(0,0,0,.5)}
+  .key-orange:active{transform:translateY(3px);box-shadow:0 1px 0 #A34200,0 3px 6px rgba(0,0,0,.5)}
+  .key-bone{background:var(--bone);color:var(--charcoal);box-shadow:0 4px 0 #9B968A,0 7px 14px rgba(0,0,0,.5)}
+  .key-bone:active{transform:translateY(3px);box-shadow:0 1px 0 #9B968A,0 3px 6px rgba(0,0,0,.5)}
+  .key-ghost{background:transparent;color:var(--putty);border:1px solid #4A4F55;box-shadow:0 3px 0 rgba(0,0,0,.35)}
+  .key-ghost:active{transform:translateY(2px);box-shadow:0 1px 0 rgba(0,0,0,.35)}
+  .key .glyph{font-size:11px}
+
+  /* ---------- chassis bar ---------- */
+  .chassis-bar{display:flex;align-items:center;justify-content:space-between;padding:20px 0;border-bottom:1px solid var(--hairline)}
+  .chassis-bar .brand{font:800 14px/1 var(--display);letter-spacing:.2em;color:var(--bone);text-decoration:none}
+  .status-chip{display:inline-flex;align-items:center;gap:8px;font:500 11px/1 var(--mono);letter-spacing:.16em;color:var(--dim);
+    border:1px solid var(--hairline);border-radius:6px;padding:9px 14px;text-transform:uppercase}
+  .status-chip i{width:7px;height:7px;border-radius:50%;background:var(--amber)}
+
+  /* ---------- panels ---------- */
+  .panel{position:relative;border:1px solid var(--hairline);border-radius:12px;background:var(--gunmetal);padding:44px 44px 48px;margin:36px 0}
+  .panel::before,.panel::after{content:"";position:absolute;width:14px;height:14px;border-color:#565C63;border-style:solid;pointer-events:none}
+  .panel::before{top:-1px;left:-1px;border-width:2px 0 0 2px;border-radius:12px 0 0 0}
+  .panel::after{bottom:-1px;right:-1px;border-width:0 2px 2px 0;border-radius:0 0 12px 0}
+  .panel-plain{background:transparent}
+  .sec-label{font:500 11px/1 var(--mono);letter-spacing:.22em;text-transform:uppercase;color:var(--dim);margin-bottom:18px}
+  .sec-head{font-size:clamp(1.15rem,2.4vw,1.7rem);margin-bottom:14px}
+  .sec-intro{color:var(--dim);margin-bottom:34px}
+
+  /* ---------- hero ---------- */
+  .hero{display:grid;grid-template-columns:1.02fr .98fr;gap:56px;align-items:center;padding:72px 0 40px}
+  .hero .kicker{margin-bottom:20px}
+  .hero h1{font-size:clamp(1.45rem,3.1vw,2.55rem);margin-bottom:8px}
+  .hero h1 .l2{color:var(--putty);font-weight:700}
+  .hero .sub{margin:20px 0 30px}
+  .hero .sub strong{color:var(--bone);font-weight:500}
+  .microline{margin-top:16px;font-size:12.5px;line-height:1.7;color:var(--dim);max-width:46ch}
+  .hero-keys{display:flex;gap:14px;flex-wrap:wrap;align-items:center}
+
+  /* instrument module */
+  .instrument{background:var(--module);border:1px solid var(--hairline);border-radius:14px;padding:22px;
+    box-shadow:0 24px 50px rgba(0,0,0,.45)}
+  .lcd{background:var(--lcd);border:1px solid #3A3223;border-radius:8px;padding:18px 20px;min-height:196px;
+    font:700 13px/2 var(--display);letter-spacing:.06em;color:var(--amber);text-shadow:0 0 12px rgba(255,194,77,.35)}
+  .lcd .ln{display:block;white-space:pre-wrap;word-break:break-word;min-height:2em;text-transform:uppercase}
+  .lcd .dim2{color:#B08A35;text-shadow:none}
+  .lcd .caret{display:inline-block;width:9px;height:1em;background:var(--amber);vertical-align:text-bottom;animation:blink 1s steps(1) infinite}
+  @keyframes blink{50%{opacity:0}}
+  .mode-row{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;margin:18px 0 0}
+  .mode-key{font:700 11px/1 var(--display);letter-spacing:.12em;text-align:center;text-transform:uppercase;
+    padding:13px 4px;border-radius:7px;background:var(--putty);color:var(--charcoal);box-shadow:0 3px 0 #8F8B80;
+    border:0;cursor:pointer;transition:transform .07s ease,box-shadow .07s ease}
+  .mode-key:hover{transform:translateY(1px);box-shadow:0 2px 0 #8F8B80}
+  .mode-key:active{transform:translateY(3px);box-shadow:0 0 0 #8F8B80}
+  .mode-key:focus-visible{outline:3px solid var(--amber);outline-offset:2px}
+  .mode-key.lit{background:var(--lcd);color:var(--amber);border:1px solid #3A3223;box-shadow:0 0 14px rgba(255,194,77,.22),0 3px 0 #0C0A05}
+  .exec-row{display:flex;gap:12px;align-items:center;margin-top:16px}
+  .exec-row .key{flex:1;justify-content:center}
+  .inst-cap{font:500 11px/1.6 var(--mono);letter-spacing:.16em;text-transform:uppercase;color:var(--dim);text-align:center;margin-top:14px}
+
+  /* feature strip */
+  .strip{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--hairline);border-bottom:1px solid var(--hairline);margin:34px 0 0}
+  .strip div{padding:18px 14px;font:500 11px/1.6 var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--dim)}
+  .strip div+div{border-left:1px solid var(--hairline)}
+  .strip b{display:block;color:var(--bone);font:700 13px/1.4 var(--display);letter-spacing:.1em;margin-bottom:4px}
+
+  /* ---------- provenance ledger ---------- */
+  .spec{border-top:1px solid #4A4F55}
+  .spec-row{display:grid;grid-template-columns:1fr auto;gap:24px;align-items:baseline;padding:16px 0;border-bottom:1px solid #4A4F55}
+  .spec-row .name{font:500 14px/1.5 var(--mono);color:var(--bone)}
+  .spec-row .name span{color:var(--dim)}
+  .spec-row .val{font:700 17px/1 var(--display);letter-spacing:.06em;color:var(--bone);font-variant-numeric:tabular-nums}
+  .spec-total .val{color:var(--amber);text-shadow:0 0 10px rgba(255,194,77,.3)}
+  .cap-note{font-size:12.5px;color:var(--dim);margin-top:14px}
+
+  /* ---------- modules grid ---------- */
+  .mods{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+  .mod{background:var(--module);border:1px solid var(--hairline);border-radius:10px;padding:22px 24px;
+    background-image:radial-gradient(#242930 1px,transparent 1px);background-size:16px 16px}
+  .mod.wide{grid-column:span 2}
+  .mod .lbl{margin-bottom:12px}
+  .mod h3{font-size:15px;letter-spacing:.08em;margin-bottom:10px}
+  .mod p{font-size:14px;color:var(--dim);max-width:none}
+  .plate{margin-top:40px;border:1px solid var(--hairline);border-radius:10px;padding:34px 30px;text-align:center;background:var(--charcoal)}
+  .plate .big{font:800 clamp(1.05rem,2.4vw,1.55rem)/1.4 var(--display);letter-spacing:.16em;text-transform:uppercase;color:var(--bone)}
+  .plate .big em{color:var(--bone);font-style:normal;text-decoration:underline;text-decoration-color:var(--putty);text-underline-offset:7px;text-decoration-thickness:2px}
+  .plate p{margin:12px auto 0;font-size:13.5px;color:var(--dim)}
+
+  /* ---------- results log ---------- */
+  .log{border-top:1px solid var(--hairline)}
+  .log-row{display:grid;grid-template-columns:170px 1fr auto;gap:12px 28px;align-items:start;padding:24px 0;border-bottom:1px solid var(--hairline)}
+  .readout{font:800 clamp(1.15rem,2vw,1.5rem)/1.3 var(--display);letter-spacing:.04em;color:var(--amber);
+    background:var(--lcd);border:1px solid #3A3223;border-radius:7px;padding:12px 14px;text-align:center;white-space:nowrap;
+    text-shadow:0 0 10px rgba(255,194,77,.3)}
+  .log-row .what{font-size:14.5px;color:var(--putty)}
+  .log-row .what b{color:var(--bone);font-weight:700}
+  .tagchip{font:700 10.5px/1 var(--display);letter-spacing:.16em;text-transform:uppercase;color:var(--putty);
+    border:1px solid #3A3F45;border-radius:5px;padding:8px 10px;white-space:nowrap}
+  .trace{display:block;margin-top:12px;max-width:340px}
+  .trace svg{width:100%;height:auto;display:block}
+  .disclaimer{margin-top:36px;border:1px solid var(--hairline);border-radius:8px;padding:20px 24px;font-size:13px;color:var(--dim);max-width:none}
+
+  /* ---------- gauges ---------- */
+  .gauge-cap{font:500 10px/1.6 var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--dim);margin-top:12px}
+  .gauge svg{width:100%;height:auto;display:block;margin-top:8px}
+  .gauge h3{font-size:13px;letter-spacing:.08em;margin-bottom:4px}
+
+  /* ---------- shop output tiles ---------- */
+  .tiles{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+  .tile{background:var(--module);border:1px solid var(--hairline);border-radius:10px;padding:20px 22px;
+    background-image:radial-gradient(#242930 1px,transparent 1px);background-size:16px 16px}
+  .tile .num{font:800 clamp(1.4rem,2.4vw,1.9rem)/1.2 var(--display);letter-spacing:.04em;color:var(--amber);
+    text-shadow:0 0 10px rgba(255,194,77,.3)}
+  .tile .lab{font-size:12.5px;color:var(--dim);margin-top:8px}
+
+  /* ---------- operator leverage ---------- */
+  .lever-row{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-bottom:16px}
+  .lever{background:var(--lcd);border:1px solid #3A3223;border-radius:10px;padding:24px 24px 22px;text-align:center}
+  .lever .num{font:800 clamp(1.7rem,3.2vw,2.5rem)/1.15 var(--display);letter-spacing:.03em;color:var(--amber);
+    text-shadow:0 0 12px rgba(255,194,77,.32)}
+  .lever .lab{font-size:13px;color:var(--dim);margin-top:10px}
+  .basis{font-size:12px;color:var(--dim);margin:14px 0 34px}
+  .sub-label{font:500 11px/1 var(--mono);letter-spacing:.22em;text-transform:uppercase;color:var(--dim);margin:34px 0 16px}
+
+  /* ---------- inside-look screens ---------- */
+  .screens{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:40px}
+  .screen{background:var(--charcoal);border:1px solid var(--hairline);border-radius:10px;padding:10px 10px 14px}
+  .screen img{width:100%;height:auto;display:block;border-radius:6px;border:1px solid #3A3223}
+  .screen figcaption{font:500 10px/1.6 var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--dim);margin-top:10px;text-align:center}
+
+  /* ---------- who for ---------- */
+  .who-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+  .who-col{border-radius:12px;padding:30px 32px}
+  .who-join{background:var(--bone);color:var(--charcoal);box-shadow:0 6px 0 #9B968A}
+  .who-join .kicker{color:#3A3E44}
+  .who-join h3{color:var(--charcoal)}
+  .who-join p{color:#3A3E44}
+  .who-skip{background:var(--module);border:1px solid var(--hairline)}
+  .who-skip .kicker{color:var(--dim)}
+  .who-skip p{color:var(--dim)}
+  .who-col h3{font-size:16px;margin:12px 0 10px}
+  .who-col p{font-size:14px;max-width:none}
+
+  /* ---------- manual / faq ---------- */
+  .faq{max-width:860px}
+  .faq details{border-bottom:1px solid var(--hairline)}
+  .faq summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:20px;
+    padding:20px 4px;font:700 14px/1.5 var(--mono);color:var(--bone)}
+  .faq summary::-webkit-details-marker{display:none}
+  .faq summary::after{content:"+";font:400 22px/1 var(--mono);color:var(--amber);flex:none;transition:transform .15s ease}
+  .faq details[open] summary::after{transform:rotate(45deg)}
+  .faq summary:focus-visible{outline:3px solid var(--amber);outline-offset:-3px;border-radius:6px}
+  .faq .a{padding:0 4px 22px;color:var(--dim);font-size:14px;max-width:66ch}
+
+  /* ---------- closing ---------- */
+  .close-panel{text-align:center;padding:64px 0 40px}
+  .close-panel h2{font-size:clamp(1.3rem,2.8vw,1.9rem);margin-bottom:12px}
+  .close-panel .sub{color:var(--dim);margin:0 auto 30px;max-width:44ch}
+  .unit-status{display:inline-block;margin:34px auto 0;border:1px solid var(--hairline);border-radius:8px;padding:16px 22px;text-align:left}
+  .unit-status .lbl{margin-bottom:10px}
+  .unit-status .us-row{font:700 13px/2 var(--display);letter-spacing:.08em;color:var(--amber)}
+  .unit-status .us-row.dim3{color:var(--dim);font-family:var(--mono);font-weight:500;letter-spacing:.14em;font-size:11px}
+
+  footer{border-top:1px solid var(--hairline);margin-top:60px;padding:30px 0 110px;font-size:12px;color:var(--dim)}
+  footer .wrap{display:grid;gap:8px}
+  footer a{color:var(--putty)}
+
+  /* ---------- sticky bar ---------- */
+  .sticky-bar{position:fixed;left:0;right:0;bottom:0;z-index:50;background:var(--gunmetal);border-top:1px solid #4A4F55;
+    box-shadow:0 -8px 24px rgba(0,0,0,.5);display:flex;align-items:center;justify-content:space-between;gap:14px;
+    padding:11px 18px calc(11px + env(safe-area-inset-bottom));transform:translateY(110%);visibility:hidden;
+    transition:transform .3s ease,visibility .3s}
+  .sticky-bar.on{transform:none;visibility:visible}
+  .sticky-bar .price{font:700 13px/1.4 var(--display);letter-spacing:.06em;color:var(--bone)}
+  .sticky-bar .price small{display:block;font:400 10.5px/1.5 var(--mono);letter-spacing:.08em;color:var(--dim);text-transform:uppercase}
+  .sticky-bar .key{padding:13px 20px;font-size:12px}
+  @media(min-width:900px){.sticky-bar{display:none} footer{padding-bottom:30px}}
+
+  /* ---------- responsive: whole-unit reflow ---------- */
+  @media(max-width:980px){
+    .mods{grid-template-columns:1fr 1fr}
+    .mod.wide{grid-column:span 2}
+    .tiles{grid-template-columns:1fr 1fr}
+  }
+  @media(max-width:640px) and (min-width:0px){
+    #gauges .mods{grid-template-columns:1fr}
+  }
+  @media(max-width:900px){
+    .hero{grid-template-columns:1fr;gap:40px;padding:48px 0 24px}
+    .strip{grid-template-columns:1fr 1fr}
+    .strip div:nth-child(3){border-left:0}
+    .strip div:nth-child(1),.strip div:nth-child(2){border-bottom:1px solid var(--hairline)}
+    .screens{grid-template-columns:1fr}
+    .lever-row{grid-template-columns:1fr}
+    .log-row{grid-template-columns:1fr;gap:10px}
+    .log-row .tagchip{order:-1;justify-self:start}
+    .log-row .readout{justify-self:start}
+    .who-grid{grid-template-columns:1fr}
+    .panel{padding:30px 24px 34px}
+  }
+  @media(max-width:640px){
+    .mods{grid-template-columns:1fr}
+    .mod.wide{grid-column:span 1}
+    .mode-row{grid-template-columns:repeat(5,1fr);gap:6px}
+    .mode-key{font-size:9.5px;padding:11px 2px}
+  }
+  @media(prefers-reduced-motion:reduce){
+    *{animation:none!important;transition:none!important}
+  }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <!-- ============ CHASSIS BAR ============ -->
+  <div class="chassis-bar">
+    <span class="brand">THE MARKETING BENCH</span>
+    <span class="status-chip"><i aria-hidden="true"></i>274/300 members</span>
+  </div>
+
+  <!-- ============ HERO ============ -->
+  <header class="hero">
+    <div>
+      <p class="kicker">From a working SEO agency</p>
+      <h1>I run an SEO agency on this system.<br><span class="l2">Here's the class that teaches it.</span></h1>
+      <p class="sub">I run a working SEO agency. The system on this page is not a course I skimmed. <strong>It's the stack my agency delivers client work on every week.</strong> Below: the proof, what's inside, and who should skip it.</p>
+      <div class="hero-keys">
+        <a class="key key-orange js-out" data-placement="hero" href="https://www.skool.com/ai-marketing-hub-pro/about?ref=f0c7f50c40fa4210b5f9e0ed5f71a870" target="_blank" rel="noopener sponsored">See inside AI Marketing Hub Pro <span class="glyph">○</span></a>
+        <a class="key key-ghost" href="#faq">Read the FAQ <span class="glyph">▷</span></a>
+      </div>
+      <p class="microline">$88/month. Price rises to $144/month when the community hits 300 members. 274 members as of August 11, 2026. Affiliate link.</p>
+    </div>
+    <div>
+      <div class="instrument">
+        <div class="lcd" id="lcdBody" role="img" aria-label="Instrument screen demo. A plain-English goal is typed and routed to one of the library's workflows, prerequisites checked, missing sources marked no data, plan ready. The track keys below switch the demo between SEO, Ads, Email, Social, and Local examples."></div>
+        <div class="mode-row" role="group" aria-label="Pick a track to demo on the screen">
+          <button type="button" class="mode-key" data-mode="0" aria-pressed="false">SEO</button><button type="button" class="mode-key" data-mode="1" aria-pressed="false">Ads</button><button type="button" class="mode-key" data-mode="2" aria-pressed="false">Email</button><button type="button" class="mode-key" data-mode="3" aria-pressed="false">Social</button><button type="button" class="mode-key lit" data-mode="4" aria-pressed="true">Local</button>
+        </div>
+        <div class="exec-row">
+          <a class="key key-orange js-out" data-placement="instrument" href="https://www.skool.com/ai-marketing-hub-pro/about?ref=f0c7f50c40fa4210b5f9e0ed5f71a870" target="_blank" rel="noopener sponsored">Join · $88/mo <span class="glyph">○</span></a>
+        </div>
+      </div>
+      <p class="inst-cap">The actual interface: type a goal, get routed to the play</p>
+    </div>
+  </header>
+
+  <!-- feature strip -->
+  <div class="strip" role="list">
+    <div role="listitem"><b>Real client proof</b>dated, windowed results</div>
+    <div role="listitem"><b>17 workflows</b>goal-routed library</div>
+    <div role="listitem"><b>576 prompts</b>loaded per play</div>
+    <div role="listitem"><b>No income claims</b>on purpose</div>
+  </div>
+
+<main>
+  <!-- ============ OPERATOR LEVERAGE ============ -->
+  <section class="panel" id="leverage">
+    <p class="sec-label">Operator leverage</p>
+    <h2 class="sec-head">One person. Agency-scale output.</h2>
+    <p class="sec-intro">The point of this whole system is multiplying what a single operator can ship. My bench, my numbers:</p>
+    <div class="lever-row">
+      <div class="lever"><p class="num">25+</p><p class="lab">client accounts run by one operator</p></div>
+      <div class="lever"><p class="num">3&#8211;4</p><p class="lab">roles in one seat: SEO fulfillment, software, marketing automation</p></div>
+      <div class="lever"><p class="num">$300K+</p><p class="lab">estimated yearly cost to hire those roles separately</p></div>
+    </div>
+    <p class="basis">Replacement-cost estimate from typical loaded salaries for the three functions. Adding a client no longer adds headcount for me. These are my real numbers, stated as mine; what you ship is up to you.</p>
+    <p class="sub-label">Shop output · what that looks like shipped</p>
+    <div class="tiles">
+      <div class="tile"><p class="num">37 + 50</p><p class="lab">Business-profile posts and articles published or scheduled across the roster in one month</p></div>
+      <div class="tile"><p class="num">360</p><p class="lab">Keywords mapped across 36 profile-optimization packages built</p></div>
+      <div class="tile"><p class="num">132</p><p class="lab">Business-profile posts written and staged</p></div>
+      <div class="tile"><p class="num">136</p><p class="lab">Custom images produced</p></div>
+      <div class="tile"><p class="num">121</p><p class="lab">Agent profiles benchmarked in a single scan</p></div>
+      <div class="tile"><p class="num">158</p><p class="lab">Posts live on one rebuilt profile in 60 days</p></div>
+    </div>
+    <p class="basis" style="margin:16px 0 0">Counts describe work produced; deployment follows each client's schedule, so "written" and "staged" mean exactly that.</p>
+  </section>
+
+  <!-- ============ PROVENANCE ============ -->
+  <section class="panel" id="authority">
+    <p class="sec-label">Unit provenance</p>
+    <h2 class="sec-head">The guy teaching it gives his tools away first.</h2>
+    <p class="sec-intro">Daniel Agrici builds in public. His free, open tools have earned 37,000+ stars on GitHub. That's not a screenshot from a sales page. It's a public profile you can check right now.</p>
+    <div class="spec" role="table" aria-label="GitHub star counts">
+      <div class="spec-row" role="row"><span class="name" role="cell">claude-seo <span>· 2,000+ forks</span></span><span class="val" role="cell">13,955 ★</span></div>
+      <div class="spec-row" role="row"><span class="name" role="cell">claude-obsidian</span><span class="val" role="cell">10,748 ★</span></div>
+      <div class="spec-row" role="row"><span class="name" role="cell">claude-ads</span><span class="val" role="cell">7,976 ★</span></div>
+      <div class="spec-row spec-total" role="row"><span class="name" role="cell">all public repos</span><span class="val" role="cell">37,000+ ★</span></div>
+    </div>
+    <p class="cap-note">Counts captured August 2026. <a href="https://github.com/AgriciDaniel" target="_blank" rel="noopener">Check his GitHub yourself</a> and count again.</p>
+    <p style="margin-top:24px">The community is the layer on top of the free tools: him live every week, the pro library, and the private builds that never ship publicly.</p>
+  </section>
+
+  <!-- ============ MODULES ============ -->
+  <section class="panel panel-plain" id="inside" style="border:0;padding-left:0;padding-right:0">
+    <p class="sec-label">Fitted modules</p>
+    <h2 class="sec-head">What you actually get</h2>
+    <p class="sec-intro">Facts, not vibes. Verified August 2026:</p>
+    <div class="mods">
+      <div class="mod wide">
+        <p class="lbl">LIB · 17/576</p>
+        <h3>The Library</h3>
+        <p>17 goal-based workflows and 576 prompts. You type a goal in plain English ("rank my plumbing site locally") and it routes you to the exact play, checks what you need, and loads the prompts that run it.</p>
+      </div>
+      <div class="mod">
+        <p class="lbl">LIVE · ×4/WK</p>
+        <h3>4 live sessions every week</h3>
+        <p>Open Lab, Live Q&amp;A, Skills Workshop, and Build Nights. Show up with a problem, leave with it shipped.</p>
+      </div>
+      <div class="mod">
+        <p class="lbl">ARCHIVE · 100+</p>
+        <h3>100+ recorded sessions</h3>
+        <p>The full archive, searchable, for everything you miss.</p>
+      </div>
+      <div class="mod">
+        <p class="lbl">ORG · PRIVATE</p>
+        <h3>Private GitHub organization</h3>
+        <p>Pro-only tools and builds, separate from the free public repos.</p>
+      </div>
+      <div class="mod">
+        <p class="lbl">SUPPORT · PRI</p>
+        <h3>Priority support</h3>
+        <p>When you're stuck, you're not stuck long.</p>
+      </div>
+    </div>
+    <div class="screens">
+      <figure class="screen">
+        <img src="assets/classroom.jpg" width="840" height="535" loading="lazy" alt="Screenshot of the community classroom: six course tracks including start, baby steps, Rank, brains and vaults, skills, and apps and extras, each with progress tracking.">
+        <figcaption>Classroom &middot; six tracks, progress-tracked</figcaption>
+      </figure>
+      <figure class="screen">
+        <img src="assets/inside-feed.jpg" width="840" height="615" loading="lazy" alt="Screenshot of the community feed: an AI Open Lab session happening in 18 hours, with pinned walkthrough posts from the founder.">
+        <figcaption>The feed &middot; Open Lab was 18 hours out at capture</figcaption>
+      </figure>
+      <figure class="screen">
+        <img src="assets/calendar.jpg" width="840" height="446" loading="lazy" alt="Screenshot of the community calendar for August 2026 showing recurring weekly live sessions on Tuesdays, Wednesdays, and Fridays.">
+        <figcaption>Calendar &middot; a typical month of live sessions</figcaption>
+      </figure>
+    </div>
+    <p class="basis" style="margin:14px 0 0">Real screenshots from inside the community, captured August 11, 2026, shared with the founder's blessing. Member identities blurred.</p>
+    <div class="plate">
+      <p class="big">The library's own rule, and the reason I trust it: <em>it refuses to fake work.</em></p>
+      <p>No invented data, no pretend audits. If a data source is missing it says "no data" instead of making something up.</p>
+    </div>
+  </section>
+
+  <!-- ============ RESULTS LOG ============ -->
+  <section class="panel" id="results">
+    <p class="sec-label">Field log</p>
+    <h2 class="sec-head">My agency's client outcomes, running this exact stack.</h2>
+    <p class="sec-intro">Real numbers from my client work in the last few months. Markets and names withheld, measurement windows stated, sources on file.</p>
+    <div class="log">
+      <div class="log-row">
+        <span class="readout">+185%</span>
+        <span class="what"><b>Google search impressions in 30 days</b> for a two-office Arizona real estate team. ChatGPT now cites their website as a source.
+          <span class="trace">
+            <svg viewBox="0 0 340 96" role="img" aria-label="Stepped trace of monthly Google search impressions: April 3.2 thousand, May 4.5 thousand, June 6.5 thousand, July 10.8 thousand.">
+              <defs><pattern id="dots" width="14" height="14" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r="1" fill="#2A2E33"/></pattern></defs>
+              <rect x="0" y="0" width="340" height="96" fill="url(#dots)"/>
+              <path d="M8,78 H86 V67 H164 V51 H242 V16 H332" fill="none" stroke="#FFC24D" stroke-width="2"/>
+              <g font-family="Red Hat Mono,monospace" font-size="10" fill="#ABB0A9">
+                <text x="8" y="92">APR 3.2K</text><text x="86" y="60">4.5K</text><text x="164" y="42">6.5K</text><text x="248" y="12" fill="#E6E2D9" font-weight="700">JUL 10.8K</text>
+              </g>
+            </svg>
+          </span>
+        </span>
+        <span class="tagchip">30 days</span>
+      </div>
+      <div class="log-row">
+        <span class="readout">+120%</span>
+        <span class="what"><b>Mobile profile impressions</b> for a luxury South Florida team, alongside +60% shown in search and +52% profile views on their business profile.</span>
+        <span class="tagchip">61 days</span>
+      </div>
+      <div class="log-row">
+        <span class="readout">+37%</span>
+        <span class="what"><b>Search impressions, with +19% clicks,</b> for a 125-agent mid-Atlantic brokerage. Their own site is now the most-cited source in AI answers about them, at a 36% share of citations across the queries we monitor.</span>
+        <span class="tagchip">28 days</span>
+      </div>
+      <div class="log-row">
+        <span class="readout">#2·#7·#8</span>
+        <span class="what"><b>Rankings by late July for guides published in March</b> for an East Bay brokerage. Perplexity cites two of their guides by name, one just 10 days after publish.</span>
+        <span class="tagchip">Mar to Jul</span>
+      </div>
+      <div class="log-row">
+        <span class="readout">+49%</span>
+        <span class="what"><b>Direction requests</b> after a Google Business Profile rebuild, with 158 posts shipped.</span>
+        <span class="tagchip">60 days</span>
+      </div>
+      <div class="log-row">
+        <span class="readout">+28%</span>
+        <span class="what"><b>Business-profile impressions in the first full month</b> for a brand-new website, with services expanded 7 to 15 and first rankings landed, including a 3,600-searches-a-month keyword now at #24. Reproducible from raw platform data.</span>
+        <span class="tagchip">May to Jun</span>
+      </div>
+    </div>
+    <p class="disclaimer">These are my agency's client results using this stack, with windows and sources on file. Your results depend on your market, your effort, and time. You'll notice there are no income claims on this page. That's on purpose.</p>
+  </section>
+
+  <!-- ============ BENCH GAUGES ============ -->
+  <section class="panel" id="gauges">
+    <p class="sec-label">Bench gauges</p>
+    <h2 class="sec-head">Same stack, more clients, same pattern.</h2>
+    <p class="sec-intro">Three more windows drawn to scale. Every value is printed, so nothing rides on the graphics. Markets and names withheld, sources on file.</p>
+    <div class="mods">
+      <div class="mod gauge">
+        <p class="lbl">GBP · 61 DAYS</p>
+        <h3>Profile visibility, luxury team</h3>
+        <svg viewBox="0 0 300 148" role="img" aria-label="Percent growth over 61 days: shown in search up 60 percent, 808 to 1,293. Profile views up 52 percent, 970 to 1,478. Mobile impressions up 120 percent, 239 to 527.">
+          <g font-family="Red Hat Mono,monospace" font-size="10" fill="#ABB0A9">
+            <text x="0" y="12">SHOWN IN SEARCH · 808 → 1,293</text>
+            <text x="0" y="62">PROFILE VIEWS · 970 → 1,478</text>
+            <text x="0" y="112">MOBILE IMPRESSIONS · 239 → 527</text>
+          </g>
+          <path d="M0,20 H126 Q130,20 130,24 V28 Q130,32 126,32 H0 Z" fill="#FFC24D"><title>Shown in search: +60% in 61 days</title></path>
+          <path d="M0,70 H109 Q113,70 113,74 V78 Q113,82 109,82 H0 Z" fill="#FFC24D"><title>Profile views: +52% in 61 days</title></path>
+          <path d="M0,120 H256 Q260,120 260,124 V128 Q260,132 256,132 H0 Z" fill="#FFC24D"><title>Mobile impressions: +120% in 61 days</title></path>
+          <g font-family="Red Hat Mono,monospace" font-size="11" font-weight="700" fill="#E6E2D9">
+            <text x="136" y="30">+60%</text><text x="119" y="80">+52%</text><text x="266" y="130">+120%</text>
+          </g>
+        </svg>
+        <p class="gauge-cap">Luxury team, South Florida · Jun 8 to Aug 7</p>
+      </div>
+      <div class="mod gauge">
+        <p class="lbl">RANK · 30 DAYS</p>
+        <h3>Keyword positions, two-office team</h3>
+        <svg viewBox="0 0 300 148" role="img" aria-label="Keyword position moves in 30 days on a 1 to 50 scale: position 44 to 22, position 21 to 15, position 34 to 15. Lower is better.">
+          <g stroke="#4A4F55" stroke-width="1"><line x1="8" y1="126" x2="268" y2="126"/></g>
+          <g font-family="Red Hat Mono,monospace" font-size="9" fill="#ABB0A9">
+            <text x="4" y="140">#1</text><text x="128" y="140">#25</text><text x="258" y="140">#50</text>
+          </g>
+          <g stroke="#6A6F75" stroke-width="2">
+            <line x1="236" y1="22" x2="127" y2="22"/><line x1="114" y1="64" x2="82" y2="64"/><line x1="183" y1="106" x2="82" y2="106"/>
+          </g>
+          <g fill="#1E2226" stroke="#ABB0A9" stroke-width="2">
+            <circle cx="236" cy="22" r="4.5"><title>Was #44</title></circle><circle cx="114" cy="64" r="4.5"><title>Was #21</title></circle><circle cx="183" cy="106" r="4.5"><title>Was #34</title></circle>
+          </g>
+          <g fill="#FFC24D" stroke="#1E2226" stroke-width="2">
+            <circle cx="127" cy="22" r="5.5"><title>Now #22</title></circle><circle cx="82" cy="64" r="5.5"><title>Now #15</title></circle><circle cx="82" cy="106" r="5.5"><title>Now #15</title></circle>
+          </g>
+          <g font-family="Red Hat Mono,monospace" font-size="10" fill="#ABB0A9">
+            <text x="246" y="26">#44</text><text x="124" y="60">#21</text><text x="193" y="110">#34</text>
+          </g>
+          <g font-family="Red Hat Mono,monospace" font-size="10.5" font-weight="700" fill="#E6E2D9">
+            <text x="97" y="26">#22</text><text x="52" y="68">#15</text><text x="52" y="110">#15</text>
+          </g>
+        </svg>
+        <p class="gauge-cap">○ was · ● now · town and community searches, anonymized</p>
+      </div>
+      <div class="mod gauge">
+        <p class="lbl">REBUILD · 60 DAYS</p>
+        <h3>Profile rebuild, agent program</h3>
+        <svg viewBox="0 0 300 148" role="img" aria-label="Percent growth over 60 days after a profile rebuild: direction requests up 49 percent, search appearances up 37 percent, profile views up 28 percent.">
+          <g font-family="Red Hat Mono,monospace" font-size="10" fill="#ABB0A9">
+            <text x="0" y="12">DIRECTION REQUESTS</text>
+            <text x="0" y="62">SEARCH APPEARANCES</text>
+            <text x="0" y="112">PROFILE VIEWS</text>
+          </g>
+          <path d="M0,20 H236 Q240,20 240,24 V28 Q240,32 236,32 H0 Z" fill="#FFC24D"><title>Direction requests: +49% in 60 days</title></path>
+          <path d="M0,70 H177 Q181,70 181,74 V78 Q181,82 177,82 H0 Z" fill="#FFC24D"><title>Search appearances: +37% in 60 days</title></path>
+          <path d="M0,120 H133 Q137,120 137,124 V128 Q137,132 133,132 H0 Z" fill="#FFC24D"><title>Profile views: +28% in 60 days</title></path>
+          <g font-family="Red Hat Mono,monospace" font-size="11" font-weight="700" fill="#E6E2D9">
+            <text x="246" y="30">+49%</text><text x="187" y="80">+37%</text><text x="143" y="130">+28%</text>
+          </g>
+        </svg>
+        <p class="gauge-cap">158 posts live · 16 reviews, 5.0★ average · 60 days</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ WHO FOR ============ -->
+  <section class="panel panel-plain" id="who" style="border:0;padding-left:0;padding-right:0">
+    <p class="sec-label">Fit check</p>
+    <h2 class="sec-head">Who it's for. Who should skip it.</h2>
+    <div class="who-grid" style="margin-top:30px">
+      <div class="who-col who-join">
+        <p class="kicker">Join if</p>
+        <h3>You'll actually ship</h3>
+        <p>You're a marketer, agency owner, SEO, local business owner, or creator who wants to run the plays yourself, and you'll show up and do the work.</p>
+      </div>
+      <div class="who-col who-skip">
+        <p class="kicker">Skip it if</p>
+        <h3>You collect courses</h3>
+        <p>Their words, not mine: "For marketers, agencies, SEOs and creators who ship. Not for collectors." Also skip it if you want someone to do it for you. That's a different thing. That's what agencies like mine are for.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ MANUAL ============ -->
+  <section class="panel" id="faq">
+    <p class="sec-label">Operator's manual</p>
+    <h2 class="sec-head">Honest FAQ</h2>
+    <div class="faq">
+      <details>
+        <summary>Do I need to know how to code?</summary>
+        <p class="a">No. You describe the goal in plain English and the system routes you to the workflow. If you can write a sentence, you can run a play. The demo above is genuinely all there is to the interface.</p>
+      </details>
+      <details>
+        <summary>Do I need to pay for anything besides the membership?</summary>
+        <p class="a">The core workflows run on free prerequisites. Some plays can plug in live keyword and competitor data, and those data pulls are usage-billed by third parties. The library checks what you have and runs with it, marking anything missing as "no data" instead of guessing.</p>
+      </details>
+      <details>
+        <summary>Is this the same as the free GitHub tools?</summary>
+        <p class="a">No. The free repos are real and they're why I trusted Daniel in the first place. The community adds the live weekly sessions, the goal-routing library, the private pro builds, and the people. The paid part is proprietary and members-only.</p>
+      </details>
+      <details>
+        <summary>What does it cost?</summary>
+        <p class="a">$88/month right now. The pricing page says it rises to $144/month at 300 members, and it's at 274 as I write this. Cancel anytime through Skool.</p>
+      </details>
+      <details>
+        <summary>Why should I trust you?</summary>
+        <p class="a">You shouldn't, blindly. Check Daniel's GitHub. Watch the demo. The results above are from my real client work and I've kept every claim to visibility and rankings metrics with stated time windows, because those are the numbers I can stand behind.</p>
+      </details>
+      <details>
+        <summary>What's your relationship to this community?</summary>
+        <p class="a">I'm a paying member, I use the system commercially in my agency, and I'm an affiliate. If you join through my link, I earn a recurring commission at no extra cost to you. That's the whole arrangement.</p>
+      </details>
+    </div>
+  </section>
+
+  <!-- ============ CLOSING ============ -->
+  <section class="close-panel" id="join">
+    <h2>See it from the inside.</h2>
+    <p class="sub">Join while it's $88. If it's not for you, cancel in two clicks.</p>
+    <a class="key key-orange js-out" data-placement="join" href="https://www.skool.com/ai-marketing-hub-pro/about?ref=f0c7f50c40fa4210b5f9e0ed5f71a870" target="_blank" rel="noopener sponsored">Join AI Marketing Hub Pro <span class="glyph">○</span></a>
+    <p class="microline" style="margin:18px auto 0;text-align:center">Affiliate link. I earn a commission if you join.</p>
+    <div class="unit-status">
+      <p class="lbl">Unit status</p>
+      <p class="us-row">MEMBERS 274/300</p>
+      <p class="us-row">PRICE $88 → $144 AT 300</p>
+      <p class="us-row dim3">verified Aug 11 2026</p>
+    </div>
+  </section>
+</main>
+
+  <footer>
+    <div class="wrap" style="padding:0">
+      <span>Affiliate disclosure: this page contains affiliate links to AI Marketing Hub Pro. The page owner earns a recurring commission on referred memberships.</span>
+      <span>All statistics on this page were captured on the dates stated and reflect specific time windows. No earnings or income are promised or implied.</span>
+      <span>&copy; <span id="yr">2026</span></span>
+    </div>
+  </footer>
+</div>
+
+<!-- sticky mobile CTA -->
+<div class="sticky-bar" id="stickyBar" aria-hidden="true">
+  <span class="price">$88/mo<small>rises to $144 at 300 · affiliate link</small></span>
+  <a class="key key-orange js-out" data-placement="sticky" href="https://www.skool.com/ai-marketing-hub-pro/about?ref=f0c7f50c40fa4210b5f9e0ed5f71a870" target="_blank" rel="noopener sponsored">Join now</a>
+</div>
+
+<script>
+/* ---------- Meta Pixel (guarded until the real ID is supplied) ---------- */
+var PIXEL_ID = "REPLACE_WITH_PIXEL_ID";
+if (!/REPLACE/.test(PIXEL_ID)) {
+  !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+  n.push=n;n.loaded=!0;n.version="2.0";n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+  document,"script","https://connect.facebook.net/en_US/fbevents.js");
+  fbq("init", PIXEL_ID);
+  fbq("track", "PageView");
+  fbq("track", "ViewContent", {content_name: "amhp-bridge"});
+}
+
+/* ---------- OutboundClick with ad-id passthrough ---------- */
+var qs = new URLSearchParams(location.search);
+var adId = qs.get("ad_id") || qs.get("utm_content") || "";
+document.querySelectorAll(".js-out").forEach(function(a){
+  a.addEventListener("click", function(){
+    if (window.fbq) fbq("trackCustom", "OutboundClick", {ad_id: adId, placement: a.dataset.placement || "page"});
+  });
+});
+
+/* ---------- LCD routing loop, mode keys wired: the one authored motion ----------
+   56 routes verified against the library's data/orchestrator.json (v0.8.0);
+   workflow ids and outcome lines verified against data/workflows/workflows.json. */
+(function(){
+  var body = document.getElementById("lcdBody");
+  var keys = [].slice.call(document.querySelectorAll(".mode-key"));
+  var MODES = [
+    {goal:"rank my roofing site",        id:"BEST-SEO-PERFORMANCE", out:"ONE PRIORITIZED SEO PLAN"},
+    {goal:"scale my landing page ads",   id:"PAID-AMPLIFY",         out:"AMPLIFY A PAGE THAT CONVERTS"},
+    {goal:"fix my welcome emails",       id:"EMAIL-LIFECYCLE",      out:"FLOWS: WELCOME → WINBACK"},
+    {goal:"draft posts for 7 platforms", id:"SOCIAL-RANK",          out:"EVIDENCE-SCOPED NATIVE DRAFTS"},
+    {goal:"rank my plumbing site locally", id:"LOCAL-DOMINATION",   out:"EVIDENCE-GATED LOCAL ACTION PLAN"}
+  ];
+  var current = 4, timers = [];
+  function lines(m){
+    return [
+      'GOAL&gt; ' + m.goal.toUpperCase(),
+      '<span class="dim2">ROUTING 56 ROUTES…</span>',
+      '✓ MATCHED: ' + m.id,
+      '<span class="dim2">' + m.out + '</span>',
+      '<span class="dim2">PREREQS: CHECKED · MISSING="NO DATA"</span>',
+      '► PLAN READY'
+    ];
+  }
+  function clearTimers(){ timers.forEach(clearTimeout); timers = []; }
+  function renderStatic(){
+    body.innerHTML = lines(MODES[current]).map(function(h){return '<span class="ln">'+h+"</span>";}).join("");
+  }
+  var reduced = matchMedia("(prefers-reduced-motion: reduce)").matches;
+  function run(){
+    clearTimers();
+    var L = lines(MODES[current]);
+    body.innerHTML = "";
+    var typed = document.createElement("span"); typed.className = "ln"; body.appendChild(typed);
+    var TYPE_TEXT = "GOAL> " + MODES[current].goal.toUpperCase();
+    var i = 0;
+    (function type(){
+      if (i <= TYPE_TEXT.length) {
+        typed.innerHTML = TYPE_TEXT.slice(0, i).replace(">", "&gt;") + '<span class="caret"></span>';
+        i++; timers.push(setTimeout(type, 36));
+      } else {
+        typed.innerHTML = L[0];
+        var n = 1;
+        (function next(){
+          if (n < L.length) {
+            var ln = document.createElement("span"); ln.className = "ln"; ln.innerHTML = L[n];
+            body.appendChild(ln); n++; timers.push(setTimeout(next, n === 2 ? 900 : 540));
+          } else { timers.push(setTimeout(run, 5400)); }
+        })();
+      }
+    })();
+  }
+  keys.forEach(function(k){
+    k.addEventListener("click", function(){
+      current = +k.dataset.mode;
+      keys.forEach(function(x){ x.classList.toggle("lit", x === k); x.setAttribute("aria-pressed", x === k ? "true" : "false"); });
+      if (reduced) renderStatic(); else run();
+    });
+  });
+  if (reduced) renderStatic(); else run();
+})();
+
+/* ---------- sticky bar after hero ---------- */
+(function(){
+  var bar = document.getElementById("stickyBar");
+  var hero = document.querySelector(".hero");
+  if (!("IntersectionObserver" in window)) return;
+  new IntersectionObserver(function(e){
+    bar.classList.toggle("on", !e[0].isIntersecting);
+    bar.setAttribute("aria-hidden", e[0].isIntersecting ? "true" : "false");
+  }, {threshold: 0}).observe(hero);
+})();
+
+document.getElementById("yr").textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
